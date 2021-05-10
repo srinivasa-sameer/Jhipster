@@ -1,0 +1,10 @@
+entity Customer {
+  firstname String required,
+  lastname String required,
+  email String required,
+  phone String required maxlength(10),
+  address TextBlob required,
+  accountnum String required 
+}
+
+paginate Customer with infinite-scroll
